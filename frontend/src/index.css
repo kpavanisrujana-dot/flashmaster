@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(13, 59, 102, 0.16), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(249, 87, 56, 0.12), transparent 30%),
+    linear-gradient(145deg, #f4f8ff, #e8eef8 48%, #eef6ff);
+  color: #12263a;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+.panel {
+  border: 1px solid #d9e3f0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(18, 38, 58, 0.08);
+}
+
+.field {
+  width: 100%;
+  border: 1px solid #c8d5e6;
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+  background: #fdfefe;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.field:focus {
+  outline: none;
+  border-color: #0d3b66;
+  box-shadow: 0 0 0 3px rgba(13, 59, 102, 0.13);
+  background: #ffffff;
+}
+
+.btn-primary {
+  border: 1px solid #0d3b66;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #1a4f86, #0d3b66);
+  color: #ffffff;
+  font-weight: 700;
+  transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.04);
+  box-shadow: 0 8px 18px rgba(13, 59, 102, 0.25);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  border: 1px solid #9eb2ca;
+  border-radius: 10px;
+  background: #f4f8ff;
+  color: #18466f;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #e9f1fb;
+}
+
+.hero-card {
+  background:
+    radial-gradient(circle at 8% 10%, rgba(255, 255, 255, 0.22), transparent 35%),
+    linear-gradient(120deg, #0d3b66, #14558e 40%, #1f6ea2 78%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 40px rgba(13, 59, 102, 0.32);
+}
+
+.admin-banner {
+  background:
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.18), transparent 35%),
+    linear-gradient(118deg, #14213d, #1d3557 42%, #274c77 90%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 42px rgba(20, 33, 61, 0.36);
+}
